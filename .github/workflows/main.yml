@@ -19,7 +19,7 @@ jobs:
     - name: aws cli version
       run: aws --version
     - name: code updation
-      run: aws lambda update-function-code --function-name githubwebhook --zip-file fileb://my-function.zip --region ap-south-1
+      run: aws lambda update-function-code --function-name githubwebhook --zip-file fileb://python.zip --region ap-south-1
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
