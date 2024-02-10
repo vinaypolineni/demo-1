@@ -13,7 +13,7 @@ jobs:
     - name: listing files in repository
       run: ls -l
     - name: zip the code
-      run: zip -r python.zip  lambda_function.py
+      run: zip -r python.zip lambda_function.py
     - name: listing files in repository  
       run: ls -l
     - name: aws cli version
