@@ -18,3 +18,5 @@ jobs:
       run: ls -l
     - name: aws cli version
       run: aws --version
+    - name: code updation
+      run: aws lambda update-function-code \ --function-name githubwebhook \ --zip-file fileb://my-function.zip
