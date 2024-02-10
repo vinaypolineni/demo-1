@@ -17,4 +17,4 @@ jobs:
     - name: listing files in repository  
       run: ls -l
     - name: aws cli version
-    - run: aws --version
+      run: aws --version
