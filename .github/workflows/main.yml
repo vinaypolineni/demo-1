@@ -1,0 +1,15 @@
+name: deploying to lambda
+on:
+  push:
+    branches:
+    - main
+    
+jobs:
+  my_job:
+    name: deploy to staging
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: listing files in repository
+      run: ls -l
+    
